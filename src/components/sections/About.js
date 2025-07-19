@@ -31,9 +31,9 @@ const About = () => {
   ];
 
   const values = [
-    { icon: <FaGraduationCap />, title: "Excellence", description: "Commitment to the highest standards" },
-    { icon: <FaRocket />, title: "Innovation", description: "Pioneering new approaches to career development" },
-    { icon: <FaHeart />, title: "Empathy", description: "Understanding each student's unique journey" }
+    { icon: <FaGraduationCap />, title: "Excellence"},
+    { icon: <FaRocket />, title: "Innovation"},
+    { icon: <FaHeart />, title: "Empathy" }
   ];
 
   const stats = [
@@ -89,23 +89,19 @@ const About = () => {
               <span className="about-badge-text">✨ Our Story</span>
             </div>
             <h2 className="about-title">
-              About <span className="about-title-gradient">Beyond Career</span>
+              About <span className="about-title-gradient">Career Built</span>
             </h2>
-            <p className="about-subtitle">
-              We believe that every student deserves access to meaningful guidance, hands-on experience, and resources that empower them to go beyond their dreams.
-            </p>
+
           </motion.div>
 
           {/* Founding Story Section */}
           <motion.div className="founding-story" variants={itemVariants}>
             <div className="story-content">
               <div className="story-text">
-                <h3 className="story-title">Founded at IIT Kharagpur</h3>
+                <h3 className="story-title">Founded at IIT</h3>
                 <p className="story-description">
-                  Beyond Career is a visionary startup founded by a team of dynamic and passionate students from IIT Kharagpur, committed to redefining how students approach their careers. 
-                </p>
-                <p className="story-description">
-                   Our mission is to be a one-stop solution for students, helping them unlock opportunities, connect with industry leaders, and achieve their aspirations.
+                  Career Built was founded by a group of passionate IIT alumni who recognized the gap between academic learning and real-world career success. 
+                  CareerBuilt is a modern edtech platform designed to bridge the gap between college education and real-world careers. Built as a simulated startup project, it reflects how students can be empowered through expert mentorship, practical guidance, and industry-aligned resources.
                 </p>
                 
                 {/* Interactive Stats */}
@@ -145,8 +141,8 @@ const About = () => {
                       <FaPlay />
                     </motion.button>
                   </div>
-                  <img 
-                    src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                  <img  
+                    src="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                     alt="IIT Kharagpur campus and students collaborating" 
                     className="story-image"
                   />

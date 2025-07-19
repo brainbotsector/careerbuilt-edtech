@@ -3,69 +3,75 @@ import React, { useState, useEffect } from 'react';
 const testimonials = [
   {
     id: 1,
-    name: "Rahul Sharma",
+    name: "Sid Naik",
     role: "Software Engineer at Google",
     company: "Google",
-    content: "Beyond Career's mentorship program completely transformed my approach to job hunting. My mentor helped me refine my skills and gave me the confidence to ace my interviews. The personalized guidance was exactly what I needed to land my dream job.",
+    content: "CareerBuilt's 90-day Career Launchpad transformed me from a confused college grad to a Google engineer. The industry-aligned projects and mock interviews gave me the exact skills recruiters wanted.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     rating: 5,
     achievement: "₹45L Package",
-    location: "Bangalore, India"
+    location: "Bangalore, India",
+    education: "IIT Kharagpur '22"
   },
   {
     id: 2,
-    name: "Priya Patel",
+    name: "Priya Mehta",
     role: "Product Manager at Microsoft",
     company: "Microsoft",
-    content: "The internship opportunities provided by Beyond Career were instrumental in building my resume. I got to work with two startups and a Fortune 500 company before graduation! The network and connections I built were invaluable.",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
+    content: "Through CareerBuilt's Industry Connect program, I got direct access to hiring managers at 3 FAANG companies before graduation. Their startup-style case studies prepared me better than any classroom.",
+    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face",
     rating: 5,
-    achievement: "3 Internships",
-    location: "Seattle, USA"
+    achievement: "3 Pre-placement Offers",
+    location: "Seattle, USA",
+    education: "BITS Pilani '21"
   },
   {
     id: 3,
-    name: "Arjun Mehta",
+    name: "Amit Verma",
     role: "Data Scientist at Amazon",
     company: "Amazon",
-    content: "As a first-generation college student, I had no idea how to navigate the corporate world. Beyond Career gave me the guidance and resources I needed to succeed. The mock interviews and resume reviews were game-changers.",
+    content: "CareerBuilt's Skill Accelerator helped me bridge the gap between my academic knowledge and real-world data science. Their micro-credentials in ML ops got me noticed by recruiters.",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
     rating: 5,
     achievement: "₹38L Package",
-    location: "Hyderabad, India"
+    location: "Hyderabad, India",
+    education: "NIT Trichy '23"
   },
   {
     id: 4,
-    name: "Neha Gupta",
+    name: "Ananya Gupta",
     role: "Investment Banker at JP Morgan",
     company: "JP Morgan",
-    content: "The career counseling sessions helped me identify my true passions and strengths. I switched from engineering to finance and couldn't be happier with my decision. The transition support was exceptional.",
+    content: "Switched from CS to finance through CareerBuilt's College Bridge program. Their alumni mentors showed me exactly how to rebrand my tech skills for Wall Street.",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
     rating: 5,
-    achievement: "Career Switch",
-    location: "Mumbai, India"
+    achievement: "Career Pivot Success",
+    location: "Mumbai, India",
+    education: "DTU '20"
   },
   {
     id: 5,
-    name: "Vikram Singh",
+    name: "Rohan Singh",
     role: "Senior Developer at Tesla",
     company: "Tesla",
-    content: "The technical interview preparation was outstanding. The mock coding sessions and system design discussions helped me crack interviews at top tech companies. I'm now working on cutting-edge automotive technology!",
+    content: "CareerBuilt's startup simulations gave me hands-on experience no college project could match. I was building production-ready code before I even graduated.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
     rating: 5,
     achievement: "₹55L Package",
-    location: "California, USA"
+    location: "California, USA",
+    education: "IIIT Hyderabad '19"
   },
   {
     id: 6,
-    name: "Shreya Reddy",
+    name: "Sanya Verma",
     role: "UX Designer at Adobe",
     company: "Adobe",
-    content: "Beyond Career helped me build an impressive portfolio and connect with industry professionals. The design mentorship program was exactly what I needed to transition from a non-design background into UX.",
-    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face",
+    content: "As a mechanical engineer, CareerBuilt's design bootcamp gave me the industry portfolio I needed to break into tech. Their design mentor from Adobe changed everything.",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
     rating: 5,
-    achievement: "Portfolio Boost",
-    location: "Pune, India"
+    achievement: "Non-Tech to Tech Transition",
+    location: "Pune, India",
+    education: "COEP Pune '22"
   }
 ];
 
@@ -417,24 +423,7 @@ const TestimonialsSection = () => {
                   e.currentTarget.style.border = '1px solid rgba(255, 255, 255, 0.1)';
                 }}
               >
-                {/* Quote Icon */}
-                <div style={{
-                  position: 'absolute',
-                  top: '-8px',
-                  left: '1.5rem',
-                  width: '32px',
-                  height: '32px',
-                  background: 'linear-gradient(135deg, #3b82f6, #8b5cf6)',
-                  borderRadius: '50%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  boxShadow: '0 4px 15px rgba(59, 130, 246, 0.4)'
-                }}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
-                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                  </svg>
-                </div>
+
 
                 {/* Achievement Badge */}
                 <div style={{

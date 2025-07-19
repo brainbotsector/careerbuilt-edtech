@@ -65,19 +65,19 @@ const Contact = () => {
     {
       icon: FaMapMarkerAlt,
       title: 'Our Office',
-      content: 'Indian Institute of Technology, Kharagpur, West Bengal',
+      content: '123 Career Lane, Suite 456, Tech City, TC 12345',
       color: 'text-blue-500'
     },
     {
       icon: FaPhone,
       title: 'Phone',
-      content: '+91 91233 34456',
+      content: '+91 1234567890',
       color: 'text-green-500'
     },
     {
       icon: FaEnvelope,
       title: 'Email',
-      content: 'contact@beyondcareer',
+      content: 'hello@careerbuilt.io',
       color: 'text-purple-500'
     },
     {

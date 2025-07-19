@@ -213,7 +213,7 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Beyond<span>Career</span>
+            Career<span>Built</span>
           </motion.a>
           
           <div className="nav-links">

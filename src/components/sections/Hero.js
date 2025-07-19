@@ -1,15 +1,13 @@
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
-
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   useEffect(() => {
     // Preload video for smooth experience
-    const video = document.createElement('video');
-    video.src = '/videos/hero-bg.mp4';
+    const video = document.createElement("video");
     video.onloadeddata = () => setIsVideoLoaded(true);
   }, []);
 
@@ -18,24 +16,26 @@ const Hero = () => {
       {/* Animated Background */}
       <div className="hero-background">
         {/* Animated gradient overlay */}
-        <div className="hero-gradient-overlay"></div>
-        
+        {/* <div className="hero-gradient-overlay"></div> */}
+
         {/* Background video */}
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="hero-video"
-          poster="/images/hero-poster.jpg"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100vh",
+            objectFit: "cover",
+            zIndex: -1,
+            opacity: 1,
+          }}
         >
-          <source src="/videos/hero-bg.mp4" type="video/mp4" />
-          {/* Fallback image */}
-          <img
-            src="/images/hero-bg.jpg"
-            alt="Students collaborating"
-            className="hero-fallback-image"
-          />
+          <source src="/videos/video.mp4" type="video/mp4" />
         </video>
 
         {/* Floating particles animation */}
@@ -52,10 +52,10 @@ const Hero = () => {
           className="hero-text-container"
           initial={{ opacity: 0, y: 50, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ 
-            duration: 1, 
+          transition={{
+            duration: 1,
             ease: "easeOut",
-            staggerChildren: 0.2 
+            staggerChildren: 0.2,
           }}
         >
           {/* Badge */}
@@ -65,7 +65,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            <span className="badge-text">🎓 From IIT Kharagpur</span>
+            <span className="badge-text">🎓 From IIT Alumni</span>
           </motion.div>
 
           {/* Main Headline */}
@@ -76,9 +76,11 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             {/* Empowering Your{' '} */}
-            <span className="hero-title-gradient">All About Your Dreams.</span>
+            <span className="hero-title-gradient">
+              Your Launchpad to Career Success
+            </span>
+
             <br />
-             Beyond Limits
           </motion.h1>
 
           {/* Subtitle */}
@@ -88,7 +90,12 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Unlock real jobs, build what college never taught you, and build a career that matters.
+            The revolutionary platform connecting ambitious students with
+            industry leaders.
+            <strong>
+              {/* {" "} */}
+              We're not just building careers—we're building the future.
+            </strong>
           </motion.p>
 
           {/* Stats */}
@@ -110,7 +117,6 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          
           <motion.div
             className="hero-cta"
             initial={{ opacity: 0, y: 30 }}
@@ -120,20 +126,23 @@ const Hero = () => {
             <Link href="#services" className="cta-primary">
               <span>Explore Services</span>
               <svg className="cta-arrow" viewBox="0 0 24 24" fill="none">
-                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path
+                  d="M5 12h14M12 5l7 7-7 7"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </Link>
-            
+
             <Link href="#contact" className="cta-secondary">
               <span>Start Your Journey</span>
             </Link>
           </motion.div>
-
-
         </motion.div>
       </div>
 
-  
       <motion.div
         className="scroll-indicator"
         initial={{ opacity: 0 }}

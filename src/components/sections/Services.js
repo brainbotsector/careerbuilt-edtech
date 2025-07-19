@@ -22,66 +22,66 @@ const Services = () => {
 
   const services = [
     {
-      icon: "🎯",
-      title: "Career Guidance",
-      description: "Personalized career counseling to help you identify your strengths and choose the right career path with industry insights.",
+      icon: "🚀",
+      title: "Career Launchpad",
+      description: "Bridging the industry gap with our program that transforms students into job-ready professionals.",
       features: [
-        "AI-powered career aptitude tests",
-        "Real-time industry trend analysis", 
-        "Personalized pathway planning",
-        "Skills gap assessment"
+        "90-day career transformation",
+        "Industry-aligned skill certification",
+        "Real-world project experience",
+        "Personalized career roadmap"
       ],
       color: "from-blue-500 to-purple-600",
       bgColor: "bg-gradient-to-br from-blue-50 to-purple-50",
-      stats: "500+ Guided"
+      
     },
     {
-      icon: "💼",
-      title: "Internship Opportunities",
-      description: "Access exclusive internship opportunities with top companies across various industries with guaranteed placement support.",
+      icon: "🤝",
+      title: "Industry Connect",
+      description: "Direct access to our network of 100+ partner companies actively hiring fresh talent.",
       features: [
-        "Curated premium internship listings",
-        "Complete application support",
-        "Mock interview preparation",
-        "Salary negotiation guidance"
+        "Exclusive recruitment drives",
+        "Company-specific preparation",
+        "Direct hiring manager access",
+        "Startup incubation support"
       ],
       color: "from-emerald-500 to-teal-600",
       bgColor: "bg-gradient-to-br from-emerald-50 to-teal-50",
-      stats: "200+ Placements"
+      
     },
     {
-      icon: "👨‍🏫",
-      title: "Mentorship Programs",
-      description: "One-on-one mentorship from industry professionals and alumni who've successfully navigated their career paths.",
+      icon: "🧠",
+      title: "Skill Accelerator",
+      description: "Next-gen learning programs co-created with industry leaders to build in-demand skills.",
       features: [
-        "Industry-specific expert mentors",
-        "Weekly one-on-one sessions",
-        "Career roadmap development",
-        "Professional network access"
+        "AI-powered skill assessment",
+        "Micro-credential courses",
+        "Live case studies",
+        "Technical mentorship"
       ],
       color: "from-orange-500 to-red-600",
       bgColor: "bg-gradient-to-br from-orange-50 to-red-50",
-      stats: "50+ Mentors"
+    
     },
     {
-      icon: "🌐",
-      title: "Community Engagement",
-      description: "Join a vibrant community of ambitious students and professionals for networking, growth, and collaborative learning.",
+      icon: "🌉",
+      title: "College Bridge",
+      description: "Campus programs that enhance traditional education with career-focused supplements.",
       features: [
-        "Exclusive networking events",
-        "Industry-focused workshops",
-        "Peer-to-peer learning groups",
-        "Alumni connection platform"
+        "Campus ambassador network",
+        "Department-specific workshops",
+        "Research commercialization",
+        "Alumni success pathways"
       ],
       color: "from-pink-500 to-rose-600",
       bgColor: "bg-gradient-to-br from-pink-50 to-rose-50",
-      stats: "1000+ Members"
     }
   ];
 
   return (
     <>
       <style jsx>{`
+        /* ALL YOUR EXISTING STYLES REMAIN EXACTLY THE SAME */
         .services-section {
           position: relative;
           min-height: 100vh;
@@ -114,29 +114,6 @@ const Services = () => {
           );
           animation: gradient-shift 8s ease-in-out infinite;
         }
-
-        {/* @keyframes gradient-shift {
-          0%, 100% {
-            background: linear-gradient(
-              45deg,
-              rgba(59, 130, 246, 0.05) 0%,
-              rgba(139, 92, 246, 0.05) 25%,
-              rgba(236, 72, 153, 0.05) 50%,
-              rgba(34, 197, 94, 0.05) 75%,
-              rgba(249, 115, 22, 0.05) 100%
-            );
-          }
-          50% {
-            background: linear-gradient(
-              225deg,
-              rgba(249, 115, 22, 0.05) 0%,
-              rgba(34, 197, 94, 0.05) 25%,
-              rgba(236, 72, 153, 0.05) 50%,
-              rgba(139, 92, 246, 0.05) 75%,
-              rgba(59, 130, 246, 0.05) 100%
-            );
-          }
-        } */}
 
         .floating-shapes {
           position: absolute;
@@ -493,16 +470,16 @@ const Services = () => {
           {/* Header */}
           <div className="services-header">
             <div className="services-badge">
-              ⚡ Comprehensive Career Solutions
+              ⚡ The CareerBuilt Advantage
             </div>
             
             <h2 className="services-title">
-              Our <span className="services-title-gradient">Premium Services</span>
+              Bridge <span className="services-title-gradient">Education to Career</span>
             </h2>
             
             <p className="services-subtitle">
-              Comprehensive services designed to accelerate your career journey with cutting-edge tools, 
-              expert mentorship, and exclusive opportunities tailored for ambitious students.
+              Our startup-style programs are designed by industry leaders to give students the unfair advantage 
+              in today's competitive job market.
             </p>
           </div>
 
@@ -541,17 +518,17 @@ const Services = () => {
           {/* Call to Action */}
           <div className="cta-section">
             <p className="cta-text">
-              Ready to transform your career journey with our premium services?
+              Ready to bridge the gap between your education and dream career?
             </p>
             <div className="cta-buttons">
               <a href="#contact" className="cta-primary">
-                <span>Get Started Today</span>
+                <span>Join CareerBuilt</span>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                   <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </a>
               <a href="#about" className="cta-secondary">
-                <span>Learn More</span>
+                <span>How It Works</span>
               </a>
             </div>
           </div>
