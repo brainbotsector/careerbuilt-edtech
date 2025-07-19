@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { FaLightbulb, FaUsers, FaHandshake, FaGraduationCap, FaRocket, FaHeart, FaChevronRight, FaPlay } from 'react-icons/fa';
+import Image from 'next/image';
 
 const About = () => {
   const [activeCard, setActiveCard] = useState(null);
@@ -141,9 +142,11 @@ const About = () => {
                       <FaPlay />
                     </motion.button>
                   </div>
-                  <img  
+                  <Image
                     src="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                     alt="IIT Kharagpur campus and students collaborating" 
+                    width={500}
+                    height={300}
                     className="story-image"
                   />
                   <div className="story-image-glow"></div>
