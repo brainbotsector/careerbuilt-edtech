@@ -94,7 +94,7 @@ const Hero = () => {
             industry leaders.
             <strong>
               {/* {" "} */}
-              We're not just building careers—we're building the future.
+              We&apos;re not just building careers—we&apos;re building the future.
             </strong>
           </motion.p>
 
