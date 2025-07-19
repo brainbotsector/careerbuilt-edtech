@@ -479,7 +479,7 @@ const Services = () => {
             
             <p className="services-subtitle">
               Our startup-style programs are designed by industry leaders to give students the unfair advantage 
-              in today's competitive job market.
+              in today&apos;s competitive job market.
             </p>
           </div>
 
