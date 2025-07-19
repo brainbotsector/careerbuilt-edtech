@@ -145,7 +145,7 @@ const Contact = () => {
         >
           <motion.div variants={itemVariants} className="contact-header">
             <div className="contact-badge">
-              <span className="contact-badge-text">💬 Let's Connect</span>
+              <span className="contact-badge-text">💬 Let&apos;s Connect</span>
             </div>
             <h2 className="contact-title">
               Get In <span className="contact-title-gradient">Touch</span>
@@ -219,7 +219,7 @@ const Contact = () => {
                 <div className="contact-form-header">
                   <h3 className="contact-form-title">Send Us a Message</h3>
                   <p className="contact-form-description">
-                    Fill out the form below and we'll get back to you within 24 hours.
+                    Fill out the form below and we&apos;ll get back to you within 24 hours.
                   </p>
                 </div>
 
