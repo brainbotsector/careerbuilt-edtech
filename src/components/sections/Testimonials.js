@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import Image from 'next/image';
 const testimonials = [
   {
     id: 1,
@@ -253,7 +253,7 @@ const TestimonialsSection = () => {
             margin: '0 auto',
             padding: '0 1rem'
           }}>
-            Hear from students who've transformed their careers with our comprehensive guidance and mentorship programs.
+            Hear from students who&apos;ve transformed their careers with our comprehensive guidance and mentorship programs.
           </p>
         </div>
 
@@ -450,7 +450,7 @@ const TestimonialsSection = () => {
                     marginBottom: '1.5rem',
                     fontStyle: 'italic'
                   }}>
-                    "{testimonial.content}"
+                    &quot;{testimonial.content}&quot;
                   </p>
 
                   {/* Rating */}
@@ -479,7 +479,7 @@ const TestimonialsSection = () => {
                     alignItems: 'center',
                     gap: '0.75rem'
                   }}>
-                    <img
+                    <Image
                       src={testimonial.image}
                       alt={testimonial.name}
                       style={{
